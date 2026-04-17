@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Showcase Platform — Mehbin CP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e0e0e;
+    --surface: #161616;
+    --border: rgba(255,255,255,0.08);
+    --fg: #f0efe8;
+    --muted: #888780;
+    --accent: #1D9E75;
+    --accent-dim: rgba(29,158,117,0.12);
+    --mono: 'DM Mono', monospace;
+    --sans: 'DM Sans', sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+  .back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+    text-decoration: none;
+    font-family: var(--mono);
+    font-size: 12px;
+    margin-bottom: 2.5rem;
+  }
+  .back:hover { color: var(--fg); }
+  h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); font-weight: 400; margin-bottom: 1rem; }
+  .lead { color: var(--muted); max-width: 640px; margin-bottom: 1.5rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2rem; }
+  .tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(29,158,117,0.28);
+    background: var(--accent-dim);
+    color: #5DCAA5;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.5rem;
+    margin-top: 1.25rem;
+  }
+  h2 { font-size: 1rem; margin-bottom: 0.75rem; }
+  p + p { margin-top: 0.9rem; }
+  ul { margin-left: 1rem; color: var(--muted); }
+  li + li { margin-top: 0.45rem; }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back" href="mehbin_cp_portfolio.html#work">← Back to portfolio</a>
+    <h1>Video Showcase Platform</h1>
+    <p class="lead">A personal showcase site for presenting editing work, reels, and selected visual projects in a polished and performance-conscious way.</p>
+    <div class="tags">
+      <span class="tag">Next.js</span>
+      <span class="tag">TypeScript</span>
+      <span class="tag">MongoDB</span>
+    </div>
+
+    <section class="card">
+      <h2>Overview</h2>
+      <p>This project is designed as a dedicated space to present video work with clarity and speed. The structure helps visitors browse reels and featured content while keeping page performance under control.</p>
+      <p>It balances visual presentation with practical loading behavior so media-heavy content remains smooth and accessible across devices.</p>
+    </section>
+
+    <section class="card">
+      <h2>Highlights</h2>
+      <ul>
+        <li>Media-focused interface for showcasing editing work</li>
+        <li>Lazy-loading strategy for better load performance</li>
+        <li>Smooth navigation and polished content presentation</li>
+        <li>Built with a modern app stack for future expansion</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
